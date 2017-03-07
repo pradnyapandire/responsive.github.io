@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background-image: url("logo2.jpg");
+    background-repeat: no-repeat;
+ background-position: center;
+    background-size: cover;  
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #eeeeee}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+ul.topnav li a:hover:not(.active) {background-color: #eeeeee;}
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+img {
+    border-radius: 50%;
+}
+}
+</style>
+</head>
+<body>
+<ul class="topnav">
+  <li><a href="#">Home</a></li>
+  <li class="dropdown">
+
+    <a href="#" class="dropbtn">Events</a>
+   
+    <div class="dropdown-content">
+      <a href="ce.html">cultural Events</a>
+      <a href="workshop.html">workshop</a>
+      <a href="Technical.html">Technical Event </a>
+       
+    </div>
+  </li>
+<li><a href="sponsors.html">sponsors</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+<img src="logo.jpg" alt="etamax" width="992" height="400">
+<table>
+<script type="text/javascript" >
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "wall2.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "wall3.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "wall4.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "wall5.jpg"
+
+</script>
+
+<img src="wall2.jpg" id="slide" width="1360" height="450" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</table>
+<p><font size="5" color="#FFF8DC"><h2>Key dates: </h2>
+<b>Fest dates: 21st-23rd February 2017</b><br><br><br>
+
+
+<b>Details: </b>
+Criteria was initiated in 2002 and renamed as ETAMAX in 2010<br><br><br>
+
+ETAMAX comes from the notation ηmax which stands for MAXIMUM EFFICIENCY.<br><br><br>
+ηmax’17 brings to you a new dimension that widens and extends the concept of utilizing your resources to the fullest to attain maximum efficiency.<br>
+
+The festival stretches over THREE days and comprises of workshops and competitions (cultural and technical). </p>
+
+</font>
+
+</body>
+</html>
